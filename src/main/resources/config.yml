@@ -1,0 +1,24 @@
+# TinyAuth 登录插件 配置
+auth:
+  enabled: true              # 登录模块开关
+  kick-timeout-seconds: 30   # 未登录超时踢出
+  kick-message: "&c你已超时未登录，请重新进服。"
+  bypass-bedrock: true       # 基岩版玩家（Geyser/Floodgate）免登录自动放行
+  salt: "TinyAII_2026"       # 密码哈希盐（生产环境建议改）
+
+messages:
+  prefix: "&7[&c登录&7] &r"
+  register-prompt: "&e首次进服请注册：&a/注册 <密码> <确认密码>"
+  login-prompt: "&e请登录：&a/登录 <密码>"
+  register-usage: "&c用法: /注册 <密码> <确认密码>"
+  register-mismatch: "&c两次密码不一致。"
+  register-short: "&c密码至少 4 位。"
+  register-exists: "&c该账号已注册，请直接登录。"
+  register-ok: "&a注册成功！已自动登录。"
+  login-usage: "&c用法: /登录 <密码>"
+  login-not-registered: "&c该账号未注册，请用 /注册 <密码> <确认密码> 注册。"
+  login-already: "&a你已登录。"
+  login-ok: "&a登录成功！欢迎回来。"
+  login-wrong: "&c密码错误！"
+  must-login: "&c请先登录：/登录 <密码>"
+  bedrock: "&e基岩版玩家免登录，欢迎回来！"
