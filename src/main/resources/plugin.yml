@@ -1,0 +1,23 @@
+name: TinyAuth
+version: 1.0.0
+main: nl.tinyaii.tinyauth.TinyAuthPlugin
+api-version: 1.16
+author: TinyAII
+description: 登录插件 - 注册/登录/未登录锁定/出生点等待/超时踢出/基岩免登录
+website: https://github.com/TinyAII
+softdepend: [Floodgate, geyser]
+
+commands:
+  注册:
+    aliases: [register, reg]
+    description: 注册账号
+    usage: /注册 <密码> <确认密码>
+  登录:
+    aliases: [login, l]
+    description: 登录账号
+    usage: /登录 <密码>
+
+permissions:
+  tinyauth.use:
+    description: 使用登录功能
+    default: true
